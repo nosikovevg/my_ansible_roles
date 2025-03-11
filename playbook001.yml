@@ -1,0 +1,10 @@
+---
+- name: Add message
+  hosts: sss
+  become: yes
+  tasks:
+
+  - name: "use shell"
+    ansible.builtin.shell: echo uraaaa>>/home/neo/mmm/m.txt
+
+# добавляем запись uraaaa в файл m.txt на удаленном сервере    

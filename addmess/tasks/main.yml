@@ -1,0 +1,15 @@
+---
+# tasks file for addmess
+- name: Create a directory if does not exist
+  ansible.builtin.file:
+   path: /home/neo/mmm
+   state: directory
+   mode: '0777'
+
+- name: Copy file
+  ansible.builtin.copy:
+   src: m.txt
+   dest: /home/neo/mmm/m.txt
+   owner: neo
+   group: neo
+   mode: '0777'

@@ -1,0 +1,7 @@
+---
+- name: Proba
+  hosts: sss
+  become: yes
+  roles:
+   - addmess
+
